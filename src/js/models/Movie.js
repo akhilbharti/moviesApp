@@ -9,10 +9,9 @@ export default class Movie {
   // Get movie
   async getMovie() {
         const apiKey = process.env.API_KEY;
-        const proxy = process.env.PROXY;
         try {
           const res = await axios.get(
-            `${proxy}http://www.omdbapi.com/?apikey=${apiKey}&i=${this.id}&type=movie&plot=full`
+            `http://www.omdbapi.com/?apikey=${apiKey}&i=${this.id}&type=movie&plot=full`
           );
           this.title = res.data.Title;
           this.img = res.data.Poster;
