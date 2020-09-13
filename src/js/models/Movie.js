@@ -8,7 +8,7 @@ export default class Movie {
 
   // Get movie
   async getMovie() {
-        const apiKey = process.env.API_KEY;
+        const apiKey = "4ad36844";
         try {
           const res = await axios.get(
             `http://www.omdbapi.com/?apikey=${apiKey}&i=${this.id}&type=movie&plot=full`

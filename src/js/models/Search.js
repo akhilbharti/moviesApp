@@ -9,7 +9,7 @@ export default class Search {
 
   // Get results from query
   async getResults(page = 1) {
-        const apiKey = process.env.API_KEY;
+        const apiKey = "4ad36844";
         
     try {
       const res = await axios.get(
