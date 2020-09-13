@@ -11,7 +11,7 @@ export default class Movie {
         const apiKey = "4ad36844";
         try {
           const res = await axios.get(
-            `http://www.omdbapi.com/?apikey=${apiKey}&i=${this.id}&type=movie&plot=full`
+            `https://www.omdbapi.com/?apikey=${apiKey}&i=${this.id}&type=movie&plot=full`
           );
           this.title = res.data.Title;
           this.img = res.data.Poster;

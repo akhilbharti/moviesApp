@@ -13,7 +13,7 @@ export default class Search {
         
     try {
       const res = await axios.get(
-        `http://www.omdbapi.com/?apikey=${apiKey}&s=${this.query}&type=movie&page=${page}`
+        `https://www.omdbapi.com/?apikey=${apiKey}&s=${this.query}&type=movie&page=${page}`
       );
       // Save the data on the object
       this.result = res.data;
