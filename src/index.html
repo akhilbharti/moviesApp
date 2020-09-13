@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <title>Movie Library</title>
+  </head>
+  <body>
+    <header class="header animated fadeInDown faster">
+      <div class="logo animated fadeIn delay-1s">
+        <i class="icon ion-ios-play-circle"></i>
+        <span class="logo__title">Home</span>
+      </div>
+      <form action="#" class="search animated fadeIn delay-1s">
+        <button class="search__button">
+          <i class="icon ion-ios-search"></i>
+        </button>
+
+        <input
+          type="text"
+          class="search__input"
+          placeholder="Type the movie name..."
+          onfocus="this.placeholder=''" onblur="this.placeholder='Type the movie name...'" 
+        />
+      </form>
+      <nav class="menu">
+        <div class="menu__viewed animated fadeIn delay-1s">
+          <i class="icon ion-ios-checkmark-circle"></i>
+          <div class="menu__viewed__panel" id="scroll"></div>
+        </div>
+        <div class="menu__favorite animated fadeIn delay-1s">
+          <i class="icon ion-ios-heart"></i>
+          <div class="menu__favorite__panel" id="scroll"></div>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+    </div>
+  </body>
+</html>
