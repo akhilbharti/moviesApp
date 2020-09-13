@@ -24,12 +24,12 @@ npm install
 npm run dev
 ```
 
-##### to build a version ready for production
+4. ##### to build a version ready for production
 ```shell
 npm run build
 ```
 
-##### live-server with hot reloading
+5. ##### live-server with hot reloading
 ```shell
 npm run start
 ```
